@@ -237,6 +237,37 @@ a {
 }
 /* ======================== checkout part css ========================= */
 
+/* ======================== billing part css ========================= */
+.billing {
+  padding-bottom: 126px;
+}
+
+.billing__heading {
+  color: var(--BlackColor);
+  padding-bottom: 41px;
+}
+
+.billing__form__label {
+  color: var(--BlackColor);
+  margin: 0;
+  padding: 0;
+}
+
+.billng__form__input {
+  padding: 16px 0px;
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+  border-radius: 0px;
+  font-size: 14px;
+  color: var(--SonicSilver);
+  font-weight: 400;
+  &:focus {
+    border-bottom: 2px solid var(--BlackColor);
+    box-shadow: none;
+  }
+}
+/* ======================== billing part css ========================= */
+
 /* ======================= footer part style ============================= */
 
 #footerPart {
