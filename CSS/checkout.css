@@ -194,6 +194,49 @@ a {
 
 /* ======================= search part style ======================= */
 
+/* ======================== checkout part css ========================= */
+
+.checkout {
+  padding: 124px 0px 119px 0px;
+}
+
+.checkout__heading {
+  padding-bottom: 11px;
+  color: var(--BlackColor);
+}
+
+.checkout__menu {
+  color: #6d6d60;
+  font-family: var(--DM-Sans);
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.checkout__menu__link {
+  color: #6d6d60;
+  cursor: pointer;
+  &:hover {
+    color: var(--BlackColor);
+  }
+}
+
+.checkout__menu__icon {
+  font-size: 9px;
+  padding-bottom: 127px;
+}
+
+.checkout__details {
+  color: var(--SonicSilver);
+}
+
+.checkout__details .checkout__details__link {
+  color: var(--BlackColor);
+}
+/* ======================== checkout part css ========================= */
+
 /* ======================= footer part style ============================= */
 
 #footerPart {
