@@ -161,7 +161,7 @@ a {
   align-items: center;
 }
 
-.searchLeftPart i{
+.searchLeftPart i {
   font-size: 18px;
 }
 
@@ -187,7 +187,7 @@ a {
   cursor: pointer;
 }
 
-.searchRightPart i{
+.searchRightPart i {
   font-size: 20px;
   cursor: pointer;
 }
@@ -196,25 +196,25 @@ a {
 
 /* ======================= footer part style ============================= */
 
-#footerPart{
+#footerPart {
   padding: 60px 0px;
   background-color: var(--WhiteSmoke);
   margin-top: 20px;
 }
 
-.footerMenu__title{
+.footerMenu__title {
   color: var(--BlackColor);
   margin-bottom: 17px;
 }
 
-.footerMenu{
+.footerMenu {
   display: flex;
   flex-direction: column;
   row-gap: 6px;
   margin-bottom: 65px;
 }
 
-.footerMenu__list__item{
+.footerMenu__list__item {
   font-size: 14px;
   font-family: var(--DM-Sans);
   font-weight: 400;
@@ -222,47 +222,47 @@ a {
   color: var(--DarkSilver) !important;
 }
 
-.footerMenu__icon{
+.footerMenu__icon {
   display: flex;
   flex-direction: row;
   column-gap: 25px;
   transition: all linear 1s;
 }
 
-.footerMenu__icon__item{
+.footerMenu__icon__item {
   font-size: 20px;
   transition: all linear 0.3s;
 }
 
-.footerMenu__icon__item:hover{
+.footerMenu__icon__item:hover {
   transform: translateY(-10px);
 }
 
-.footerFour__number{
+.footerFour__number {
   color: var(--BlackColor) !important;
 }
 
-.footerFour__mail{
+.footerFour__mail {
   color: var(--BlackColor) !important;
 }
 
-.footerFour__Address{
+.footerFour__Address {
   font-size: 14px;
   font-weight: 400;
   font-family: var(--DM-Sans);
   color: var(--DarkSilver);
 }
 
-.footerFive__logo{
+.footerFive__logo {
   width: 120px;
   height: 30px;
 }
 
-.footerFive__text{
+.footerFive__text {
   font-size: 14px;
 }
 
-.footerCopy__text{
+.footerCopy__text {
   text-align: end;
   font-size: 14px;
   font-weight: 400;
