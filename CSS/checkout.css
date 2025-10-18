@@ -300,6 +300,72 @@ a {
 }
 /* ======================== your order part css ========================= */
 
+/* ======================== bank part css ========================= */
+
+.bank {
+  margin-bottom: 140px;
+}
+
+.bank__radio {
+  margin-bottom: 24px;
+  color: var(--BlackColor);
+}
+
+.bank__radio__input:checked {
+  background-color: black;
+  border-color: black;
+}
+
+.bank__radio__input:focus {
+  border-color: black;
+  box-shadow: 0 0 0 0.15rem rgba(0, 0, 0, 0.25);
+}
+.bank__text {
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--SonicSilver);
+  padding: 20px 0px 17px 26px;
+  margin: 0px 0px 26px 12px;
+  background-color: #f5f5f3;
+}
+
+.bank2__radio {
+  margin-bottom: 24px;
+  color: var(--SonicSilver);
+}
+
+.bank2__text {
+  font-family: var(--DM-Sans);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--SonicSilver);
+  margin: 0px 0px 26px 12px;
+}
+
+.bank__text__dark {
+  color: var(--BlackColor);
+}
+
+.bank__btn {
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+  font-weight: 700;
+  color: #ffffff;
+  padding: 16px 44px;
+  background-color: var(--BlackColor);
+  border: 1px solid var(--BlackColor);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+  &:hover {
+    color: var(--BlackColor);
+    background-color: #ffffff;
+    border: 1px solid var(--BlackColor);
+  }
+}
+/* ======================== bank part css ========================= */
+
 /* ======================= footer part style ============================= */
 
 #footerPart {
