@@ -1,0 +1,446 @@
+/* ======================= google font ===================== */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+/* font-family: "DM Sans", sans-serif; */
+
+/* ======================= google font ===================== */
+
+/* ======================= common css ====================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a,
+span {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+div,
+section,
+article,
+address,
+li,
+ul,
+ol,
+img,
+picture,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================= common css ====================== */
+
+/* ======================= css variables ====================== */
+
+:root {
+  --WhiteColor: #ffff;
+  --Anti-FlashWhite: #f3f3f3;
+  --WhiteSmoke: #f5f5f3;
+  --BlackColor: #262626;
+  --DarkSilver: #6d6d6d;
+  --SonicSilver: #767676;
+  --MetalColor: #b6b6b6;
+  --TulipColor: #ff8686;
+  --StrongGreen: #7ed321;
+  --tealGreen: #15cba5;
+  --DM-Sans: "DM Sans", sans-serif;
+}
+
+.heading1 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 49px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading2 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 39px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading3 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading4 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 0px;
+}
+.heading5 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+.heading6 {
+  font-family: var(--DM-Sans);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+.paragraph {
+  font-family: var(--DM-Sans);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+/* ======================= css variables ====================== */
+
+/* ======================= navbar style ======================= */
+
+.customNav {
+  padding: 25px 0;
+}
+
+.customNavMenu {
+  margin: 0 auto;
+  column-gap: 40px;
+}
+
+.customNavMenu__list__item {
+  color: var(--SonicSilver);
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+  font-weight: 500;
+  transition: all linear 0.3s;
+}
+
+.customNavMenu__list__item:hover {
+  color: var(--BlackColor);
+}
+
+/* ======================= navbar style ======================= */
+
+/* ======================= search part style ======================= */
+
+#searchPart {
+  background-color: var(--WhiteSmoke);
+  padding: 25px 0;
+}
+
+.searchProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchLeftPart i {
+  font-size: 18px;
+}
+
+.searchLeftPart__text {
+  color: var(--BlackColor);
+  font-size: 16px;
+  font-family: var(--DM-Sans);
+  font-weight: 500;
+}
+
+.searchMiddlePart__input {
+  width: 100%;
+  padding: 16px 21px;
+  border: none;
+  background-color: var(--WhiteColor);
+  color: var(--BlackColor);
+}
+
+.searchMiddlePart__icon {
+  position: absolute;
+  top: 37%;
+  left: 93%;
+  cursor: pointer;
+}
+
+.searchRightPart i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ======================= search part style ======================= */
+
+/* ======================== checkout part css ========================= */
+
+.checkout {
+  padding: 124px 0px 119px 0px;
+}
+
+.checkout__heading {
+  padding-bottom: 11px;
+  color: var(--BlackColor);
+}
+
+.checkout__menu {
+  color: #6d6d60;
+  font-family: var(--DM-Sans);
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.checkout__menu__link {
+  color: #6d6d60;
+  cursor: pointer;
+  &:hover {
+    color: var(--BlackColor);
+  }
+}
+
+.checkout__menu__icon {
+  font-size: 9px;
+  padding-bottom: 127px;
+}
+
+.checkout__details {
+  color: var(--SonicSilver);
+}
+
+.checkout__details .checkout__details__link {
+  color: var(--BlackColor);
+}
+/* ======================== checkout part css ========================= */
+
+/* ======================== billing part css ========================= */
+.billing {
+  padding-bottom: 126px;
+}
+
+.billing__heading {
+  color: var(--BlackColor);
+  padding-bottom: 41px;
+}
+
+.billing__form__label {
+  color: var(--BlackColor);
+  margin: 0;
+  padding: 0;
+}
+
+.billng__form__input {
+  padding: 16px 0px;
+  border: none;
+  border-bottom: 2px solid #f0f0f0;
+  border-radius: 0px;
+  font-size: 14px;
+  color: var(--SonicSilver);
+  font-weight: 400;
+  &:focus {
+    border-bottom: 2px solid var(--BlackColor);
+    box-shadow: none;
+  }
+}
+/* ======================== billing part css ========================= */
+
+/* ======================== your order part css ========================= */
+.order__heading {
+  color: var(--BlackColor);
+}
+
+.order__table {
+  margin-bottom: 60px;
+}
+
+.order__tableCol1 {
+  color: var(--BlackColor);
+  padding: 16px 0px 16px 20px !important;
+}
+
+.order__tablecol2Light {
+  font-family: var(--DM-Sans);
+  color: var(--SonicSilver);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 16px 0px 16px 20px !important;
+}
+
+.order__tablecol2Dark {
+  font-family: var(--DM-Sans);
+  color: var(--BlackColor);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 16px 0px 16px 20px !important;
+}
+/* ======================== your order part css ========================= */
+
+/* ======================== bank part css ========================= */
+
+.bank {
+  margin-bottom: 140px;
+}
+
+.bank__radio {
+  margin-bottom: 24px;
+  color: var(--BlackColor);
+}
+
+.bank__radio__input:checked {
+  background-color: black;
+  border-color: black;
+}
+
+.bank__radio__input:focus {
+  border-color: black;
+  box-shadow: 0 0 0 0.15rem rgba(0, 0, 0, 0.25);
+}
+
+.bank__text {
+  font-family: var(--DM-Sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--SonicSilver);
+  padding: 20px 0px 17px 26px;
+  margin: 0px 0px 26px 12px;
+  background-color: #f5f5f3;
+}
+
+.bank2__radio {
+  margin-bottom: 24px;
+  color: var(--SonicSilver);
+}
+
+.bank2__text {
+  font-family: var(--DM-Sans);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--SonicSilver);
+  margin: 0px 0px 26px 12px;
+}
+
+.bank__text__dark {
+  color: var(--BlackColor);
+}
+
+.bank__btn {
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+  font-weight: 700;
+  color: #ffffff;
+  padding: 16px 44px;
+  background-color: var(--BlackColor);
+  border: 1px solid var(--BlackColor);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+  &:hover {
+    color: var(--BlackColor);
+    background-color: #ffffff;
+    border: 1px solid var(--BlackColor);
+  }
+}
+/* ======================== bank part css ========================= */
+
+/* ======================= footer part style ============================= */
+
+#footerPart {
+  padding: 60px 0px;
+  background-color: var(--WhiteSmoke);
+  margin-top: 20px;
+}
+
+.footerMenu__title {
+  color: var(--BlackColor);
+  margin-bottom: 17px;
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  margin-bottom: 65px;
+}
+
+.footerMenu__list__item {
+  font-size: 14px;
+  font-family: var(--DM-Sans);
+  font-weight: 400;
+  line-height: 23px;
+  color: var(--DarkSilver) !important;
+}
+
+.footerMenu__icon {
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  transition: all linear 1s;
+}
+
+.footerMenu__icon__item {
+  font-size: 20px;
+  transition: all linear 0.3s;
+}
+
+.footerMenu__icon__item:hover {
+  transform: translateY(-10px);
+}
+
+.footerFour__number {
+  color: var(--BlackColor) !important;
+}
+
+.footerFour__mail {
+  color: var(--BlackColor) !important;
+}
+
+.footerFour__Address {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--DM-Sans);
+  color: var(--DarkSilver);
+}
+
+.footerFive__logo {
+  width: 120px;
+  height: 30px;
+}
+
+.footerFive__text {
+  font-size: 14px;
+}
+
+.footerCopy__text {
+  text-align: end;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--DarkSilver);
+}
+
+/* ======================= footer part style ============================= */
