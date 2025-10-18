@@ -290,6 +290,7 @@ a {
   line-height: 30px;
   padding: 16px 0px 16px 20px !important;
 }
+
 .order__tablecol2Dark {
   font-family: var(--DM-Sans);
   color: var(--BlackColor);
@@ -320,6 +321,7 @@ a {
   border-color: black;
   box-shadow: 0 0 0 0.15rem rgba(0, 0, 0, 0.25);
 }
+
 .bank__text {
   font-family: var(--DM-Sans);
   font-size: 14px;
