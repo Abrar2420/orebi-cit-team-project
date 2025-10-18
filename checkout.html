@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orebi</title>
+
+    <!-- ---------- bootstrap link -------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- ---------- bootstrap link -------- -->
+
+    <!-- ---------- font awesome cdn ------ -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-f308b1c468d733f774885022697dfc5c.css?vsn=d"
+    />
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/fontawesome.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/fontawesome.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/whiteboard-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/whiteboard-semibold.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-fill-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-fill-semibold.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-duo-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-duo-semibold.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-semibold.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/utility-semibold.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thumbprint-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thumbprint-light.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-press-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-press-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/slab-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-thin.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-solid.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-duotone-light.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-thin.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-solid.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/sharp-light.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-duo-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-duo-solid.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/notdog-solid.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-fill-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-fill-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-duo-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-duo-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/jelly-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/etch-solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/etch-solid.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-thin.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/duotone-light.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thin.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/thin.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/solid.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/solid.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/regular.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/light.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/light.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/brands.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/brands.css"
+      />
+    </noscript>
+
+    <link
+      defer
+      media="print"
+      onload="this.media='all'"
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.1.0/css/chisel-regular.css"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.1.0/css/chisel-regular.css"
+      />
+    </noscript>
+    <!-- ---------- font awesome cdn ------ -->
+
+    <!-- ----------- css link ------------- -->
+    <link rel="stylesheet" href="CSS/cart.css">
+    <link rel="stylesheet" href="CSS/checkout.css">
+    <!-- ----------- css link ------------- -->
+  </head>
+
+  <body>
+    <!-- ======================= navbar part ==================== -->
+
+    <nav class="navbar navbar-expand-lg customNav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <picture>
+            <img
+              src="Logo/Logo.png"
+              alt="Logo/Logo.png"
+            />
+          </picture>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav customNavMenu">
+            <li class="nav-item customNavMenu__list">
+              <a class="nav-link customNavMenu__list__item" href="home.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="shop.html"
+                >Shop</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="contact.html"
+                >Contacts</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link customNavMenu__list__item" href="#">Journal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======================= navbar part ==================== -->
+
+    <!-- ======================= search part ==================== -->
+
+    <section id="searchPart">
+      <div class="container">
+        <div class="row searchProduct">
+          <div class="col-lg-2">
+            <div class="searchLeftPart d-flex align-items-center gap-1">
+              <i class="fa-solid fa-grip-lines" style="color: #000000"></i>
+              <p class="searchLeftPart__text">Shop by Category</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 offset-1">
+            <div class="searchMiddlePart position-relative">
+              <input type="text" placeholder="Search Products" class="searchMiddlePart__input"/>
+              <i class="fa-solid fa-magnifying-glass searchMiddlePart__icon" style="color: #000000;"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-1 offset-1">
+            <div class="searchRightPart d-flex gap-4">
+              <i class="fa-solid fa-user" style="color: #000000"></i>
+              <i class="fa-solid fa-cart-shopping" style="color: #000000"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= search part ==================== -->
+
+        <!-- ======================= checkout part ==================== -->
+    <section class="checkout">
+      <div class="container">
+        <div class="col-4">
+          <div class="row">
+            <div class="checkout__content">
+              <h2 class="checkout__heading heading1">Checkout</h2>
+              <p class="checkout__menu">
+                <a href="#" class="checkout__menu__link">Home</a>
+                <span
+                  ><i class="fa-light fa-greater-than checkout__menu__icon"></i
+                ></span>
+                <a href="./checkout.html" class="checkout__menu__link">Checkout</a>
+              </p>
+              <p class="checkout__details paragraph">
+                Have a coupon? <a href="" class="checkout__details__link">
+                  Click here to enter your code</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= checkout part ==================== -->
+
+        <!-- ======================= billing part ==================== -->
+    <section class="billing">
+      <div class="container">
+        <div class="col-8">
+          <div class="row">
+            <!-- billing headign  -->
+            <div class="billing__heading">
+              <h2 class="heading2">Billing Details</h2>
+            </div>
+            <!-- billing form -->
+            <form action="">
+              <div class="row mb-4">
+                <div class="col-6">
+                  <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >First Name *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="First Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >Last Name *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+              </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >Company Name (optional)</label
+                    >                        
+                    <input
+                      type="text"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="Company"
+                    />
+                    </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                    <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >Country *</label
+                    >                        
+                        <select class="form-select billng__form__input" aria-label="Default select example">
+                            <option selected>Bangladesh</option>
+                            <option value="1">United States</option>
+                            <option value="2">United Kingdom</option>
+                            <option value="3">Australia</option>
+                            <option value="4">South Africa</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >Street Address *</label
+                    >                        
+                    <input
+                      type="text"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="House number and street name"
+                    />
+                    <input
+                      type="text"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="Apartment, suite, unit etc. (optional)"
+                    />
+                    </div>
+                </div>
+              </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >County (optional)</label
+                    >                        
+                    <input
+                      type="text"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="County"
+                    />
+                    </div>
+                </div>
+              </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >Post Code *</label
+                    >                        
+                    <input
+                      type="text"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="Post Code"
+                    />
+                    </div>
+                </div>
+              </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >Phone *</label
+                    >                        
+                    <input
+                      type="number"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="Phone"
+                    />
+                    </div>
+                </div>
+              </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="billing__form">
+                    <label
+                      for="exampleFormControlInput1"
+                      class="form-label billing__form__label heading6"
+                      >Email Address *</label
+                    >                        
+                    <input
+                      type="email"
+                      class="form-control billng__form__input"
+                      id="exampleFormControlInput1"
+                      placeholder="Email"
+                    />
+                    </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= billing part ==================== -->
+
+    <!-- ======================= your order part ==================== -->
+     <section class="order">
+        <div class="container">
+            <div class="col-5">
+                <div class="row">
+                    <!-- order headign  -->
+                    <div class="order__heading mb-5">
+                        <h2 class="heading2">Your Order</h2>
+                    </div>
+                    <table class="table table-bordered text-nowrap equal-table w-100 order__table">
+                        <colgroup>
+                            <col class="w-50">
+                            <col class="w-50">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                            <td class="order__tableCol1 heading6">Product</td>
+                            <td class="order__tablecol2Light">Total</td>
+                            </tr>
+                            <tr>
+                            <td class="order__tableCol1 heading6">Product name x 1</td>
+                            <td class="order__tablecol2Light">389.99 $</td>
+                            </tr>
+                            <tr>
+                            <td class="order__tableCol1 heading6">Subtotal</td>
+                            <td class="order__tablecol2Dark">389.99 $</td>
+                            </tr>
+                            <tr>
+                            <td class="order__tableCol1 heading6">Total</td>
+                            <td class="order__tablecol2Dark">389.99 $</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- ======================= your order part ==================== -->
+
+    <!-- ======================= bank part ==================== -->
+     <section class="bank">
+      <div class="container">
+        <div class="col-8">
+          <div class="form-check bank__radio heading6">
+            <input class="form-check-input bank__radio__input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label bank__radio__label" for="flexRadioDefault1">
+              Bank
+            </label>
+          </div>
+          <p class="bank__text">Pay via Bank; you can pay with your credit card if you don’t have a Bank account.</p>
+          <div class="form-check bank2__radio heading6">
+            <input class="form-check-input bank__radio__input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+            <label class="form-check-label" for="flexRadioDefault2">
+              Bank 2
+            </label>
+          </div>
+          <p class="bank2__text">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span class="bank__text__dark">privacy policy.</span></p>
+          <button class="bank__btn">Proceed to Bank</button>
+        </div>
+      </div>
+     </section>
+    <!-- ======================= bank part ==================== -->
+
+    <!-- ======================= footer part ==================== -->
+     <section id="footerPart">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-1 footerOne">
+            <div class="d-flex flex-column align-items-start">
+
+              <h6 class="heading6 footerMenu__title">MENU</h6>
+
+              <ul class="footerMenu">
+                <li class="footerMenu__list"><a href="home.html" class="footerMenu__list__item">Home</a></li>
+                <li class="footerMenu__list"><a href="shop.html" class="footerMenu__list__item">Shop</a></li>
+                <li class="footerMenu__list"><a href="about.html" class="footerMenu__list__item">About</a></li>
+                <li class="footerMenu__list"><a href="contact.html" class="footerMenu__list__item">Contact</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Journal</a></li>
+              </ul>
+
+              <div class="footerMenu__icon">
+                <a href="#"><i class="fa-brands fa-facebook-f footerMenu__icon__item" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in footerMenu__icon__item" style="color: #000000;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram footerMenu__icon__item" style="color: #000000;"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-1 footerTwo offset-1">
+            <div class="d-flex flex-column align-items-start">
+
+              <h6 class="heading6 footerMenu__title">SHOP</h6>
+
+              <ul class="footerMenu">
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Category 1</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Category 2</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Category 3</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Category 4</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Category 5</a></li>
+              </ul>
+
+          </div>
+
+          </div>
+
+          <div class="col-lg-2 footerThree offset-1">
+            <div class="d-flex flex-column align-items-start">
+
+              <h6 class="heading6 footerMenu__title">HELP</h6>
+
+              <ul class="footerMenu">
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Privacy Policy</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Terms & Conditions</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Special E-shop</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Shipping</a></li>
+                <li class="footerMenu__list"><a href="#" class="footerMenu__list__item">Secure Payments</a></li>
+              </ul>
+
+          </div>
+
+          </div>
+
+          <div class="col-lg-3 footerFour">
+            <div class="d-flex flex-column align-items-start">  
+              
+              <h6 class="heading6"><a href="#" class="footerFour__number">(052) 611-5711</a></h6>
+              <h6 class="heading6"><a href="#" class="footerFour__mail">company@domain.com</a></h6>
+
+              <p class="footerFour__Address mt-3">575 Crescent Ave. Quakertown, PA 18951</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 footerFive">
+            <div class="d-flex flex-column align-items-start">  
+              
+              <div>
+                <picture>
+                  <img src="Logo/Logo.png" alt="Logo/Logo.png" class="footerFive__logo">
+                </picture>
+              </div>
+              
+            </div>
+          </div>
+
+          <p class="footerCopy__text">2020 Orebi Minimal eCommerce Figma Template by Adveits</p>
+
+      </div>
+     </section>
+    <!-- ======================= footer part ==================== -->
+  </body>
+
+  <!-- ------------- bootstarp link ----------  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <!-- ------------- bootstarp link ----------  -->
+</html>
