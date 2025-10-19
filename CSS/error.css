@@ -194,6 +194,59 @@ a {
 
 /* ======================= search part style ======================= */
 
+
+/* ======================= error part style ======================= */
+
+#errorPart{
+  padding: 81px 0 140px 0;
+  background-color: #FFFFFF;
+}
+.error__title{
+  font-size: 200px;
+  font-weight: 700;
+  color: var(--BlackColor);
+}
+
+.errorPart__details{
+  color: var(--SonicSilver);
+  margin-bottom: 50px;
+}
+
+.customError__details{
+   color: var(--SonicSilver);
+
+}
+
+.search__box input{
+  padding: 20px; 
+  border: 2px solid #F0F0F0;
+  box-shadow: none;
+}
+
+.search_btn {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--BlackColor);
+  font-size: 16px;
+}
+
+.errot__btn{
+  padding: 16px 55px 16px 49px;
+  background-color: var(--BlackColor);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+
+/* ======================= error part style ======================= */
+
+
 /* ======================= footer part style ============================= */
 
 #footerPart{
