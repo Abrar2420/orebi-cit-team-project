@@ -194,6 +194,68 @@ a {
 
 /* ======================= search part style ======================= */
 
+/* ======================= about part style ======================= */
+
+#aboutPart {
+  padding: 131px 0;
+  font-family: var(--DM-Sans);
+}
+
+.aboutPicture {
+  margin-top: 136px;
+  margin-bottom: 128px;
+}
+
+.aboutPicture__one {
+  position: relative;
+}
+
+.aboutPicture__oneBtn {
+  position: absolute;
+  top: 84%;
+  left: 35%;
+}
+
+.aboutPicture__two {
+  position: relative;
+}
+
+.aboutPicture__twoBtn {
+  position: absolute;
+  top: 84%;
+  left: 35%;
+}
+
+.aboutBtn {
+  padding: 20px 46px;
+  color: var(--WhiteColor);
+  background-color: var(--BlackColor);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aboutPara {
+  font-weight: 400;
+  margin-top: 128px;
+  margin-bottom: 118px;
+  line-height: 56px;
+  font-size: 33px;
+  color: var(--BlackColor);
+}
+
+.articleHeading {
+  color: var(--BlackColor);
+}
+
+.articlePara {
+  font-weight: 400;
+  margin-top: 10px;
+  color: var(--SonicSilver);
+}
+
+/* ======================= about part style ======================= */
+
 /* ======================= footer part style ============================= */
 
 #footerPart {
