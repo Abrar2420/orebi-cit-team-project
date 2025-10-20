@@ -194,6 +194,42 @@ a {
 
 /* ======================= search part style ======================= */
 
+/* ======================= cart part style ======================= */
+
+.cart__heading{
+  margin-top: 124px;
+  margin-bottom: 10px;
+}
+
+.cart__menu__link{
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--DarkSilver) !important;
+}
+
+.cart__menu__icon{
+  vertical-align: middle;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+#cartContent{
+  padding: 136px 0;
+  font-family: var(--DM-Sans);
+}
+
+.cartContent__top{
+  text-align: center;
+  background-color: var(--WhiteSmoke);
+  padding: 34px 0 32px;
+}
+
+#contentPart{
+  padding: 140px 0 54px;
+}
+
+/* ======================= cart part style ======================= */
+
 /* ======================= footer part style ============================= */
 
 #footerPart{
