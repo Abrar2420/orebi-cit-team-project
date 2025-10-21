@@ -234,6 +234,10 @@ a {
   font-size: 16px;
 }
 
+.search_btn__icon{
+  color: #000 !important;
+}
+
 .errot__btn{
   padding: 16px 55px 16px 49px;
   background-color: var(--BlackColor);
