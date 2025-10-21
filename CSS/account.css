@@ -195,6 +195,59 @@ a {
 /* ======================= search part style ======================= */
 
 /* ======================= account part style ======================= */
+#account {
+  padding: 100px 0 0 0;
+  background-color: var(--WhiteColor);
+}
+
+.accountHeading {
+  color: var(--BlackColor);
+}
+
+.accountBreadcrumb {
+  color: var(--DarkSilver);
+}
+
+.accountLeft {
+  padding: 80px 0;
+}
+
+.accountLeftContent {
+  padding-bottom: 25px;
+  color: var(--SonicSilver);
+}
+
+.accountLeftContent:hover {
+  color: var(--BlackColor);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: var(--DM-Sans);
+}
+
+.accountRightContent {
+  padding-top: 175px;
+  text-align: start;
+}
+
+.accountRightGretting {
+  color: var(--SonicSilver);
+}
+
+.accountRightGretting:hover {
+  color: var(--BlackColor);
+  cursor: pointer;
+}
+
+.accountRightDetails {
+  padding-top: 30px;
+  color: var(--SonicSilver);
+}
+
+.accountRightDetails:hover {
+  color: var(--BlackColor);
+  cursor: pointer;
+}
 
 /* ======================= account part style ======================= */
 
